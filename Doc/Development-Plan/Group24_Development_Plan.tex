@@ -1,0 +1,180 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper, top=3cm, bottom=2cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+
+\title{SE 3XA3: Development Plan}
+\author{
+    Group 24 - L02 \\
+    Michael Panunto - panuntom, \\
+    Michael Jenkins - jenkinma, \\
+    Bishoy Sefin - sefinb
+}
+\date{\today}
+
+\begin{document}
+
+% Setting options to be used for table
+\setlength{\arrayrulewidth}{1.5pt}
+\definecolor{light-gray}{gray}{0.90}
+
+\begin{table}[H]
+\begin{center}
+    \rowcolors{1}{white}{light-gray}
+    \caption{Revision History} \label{tab:RevisionHistory}
+    \begin{tabular}{l p{0.4\linewidth} p{0.4\linewidth}}
+        \hline
+        \textbf{Date} & \textbf{Developer(s)} & \textbf{Change} \\
+        \hline
+        2017-09-29 & Michael Panunto, \newline Michael Jenkins, \newline Bishoy Sefin & Created Development Plan - rev. 0 \\
+        \hline 
+    \end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\maketitle
+
+~\\
+
+Development plan outlining process for completing the Reminders Project.
+
+~\\
+
+\section*{Contents}
+    \label{sec:Contents}
+    \begin{enumerate}
+        \item \hyperref[sec:MeetingPlan]{Team Meeting Plan}
+        \item \hyperref[sec:CommunicationPlan]{Team Communication Plan}
+        \item \hyperref[sec:Roles]{Team Member Roles}
+        \item \hyperref[sec:gitWorkflow]{Git Workflow Plan}
+        \item \hyperref[sec:ProofOfConcept]{Proof of Concept Demonstration Plan}
+        \item \hyperref[sec:Technology]{Technology}
+        \item \hyperref[sec:CodingStyle]{Coding Style}
+        \item \hyperref[sec:ProjectSchedule]{Project Schedule}
+        \item \hyperref[sec:projReview]{Project Review}
+    \end{enumerate}
+
+\newpage
+
+% Bishoy
+\section{Team Meeting Plan}
+    \label{sec:MeetingPlan}
+    The Team will have two to three meetings per week to work on the project milestones. Those meetings will happen on Monday, Wednesday and Friday of each week. The meeting will happen on Mondays at 2:30 PM and on Wednesdays and Fridays during the lab hours and could extend till after the lab if needed. The meetings will happen in the Health Sciences Centre as well as the Information Technology building. \\ \\
+    
+    The main purpose of the meetings are to work together as a team in order to ensure that the development of the project flows smoothly. This can be done by ensuring proper communication among the team members. The meetings are meant for the members to work together as team and ask questions to clarify and discrepancies. The structure of the meeting should be broken down to the first 30 minutes being a time for the members to show other members their progress in the project. This is meant to be a discussion time to discuss where the team stands in terms of the project. Following this, the members shall review upcoming due dates and divide tasks fairly and according to the knowledge of each member. For the last hour of the meeting, the members shall work on their own individual sections of the project and bring up any questions that they might have. The meeting will be chaired by Michael Panunto. The meeting minutes and the summary statement of each meeting will be recorded by Bishoy Sefin and Michael Jenkins alternatively. The person chairing the meeting will ensure that every member knows their roles till the next meeting before the meeting is dismissed. 
+
+    
+\begin{table}[H]
+    \centering
+    \caption{Meeting Schedule}
+    \begin{tabular}{|l|l|l|}
+    \hline
+    Meeting Number & Meeting Date & Meeting Objectives \\
+    \hline
+    1              & September 20  &Divide roles for Problem Statement \\
+    \hline
+    2               & September 22 &  Submit Problem Statement\\
+    \hline
+    3               & September 27 &Discuss the team's development plan. Assign roles.\\
+    \hline
+    4               & September 29 &Add minor details to development plan and submit.\\
+    \hline
+    6               & October 4    &Create requirement document.\\
+    \hline
+    7               & October 6    &Work on Proof of concept Demonstration.\\
+    \hline
+    10               & October 23   &Come up with a plan to execute the project.\\
+    \hline
+    11               & October 25   &Test Plan Revision 0. \\
+    \hline
+    13               & November 1   &Design and Document Revision 0.\\
+    \hline
+    16               & November 10   &Evaluate strengths and weaknesses.\\
+    \hline
+    17               & November 13   &Revision 0 Demonstration.\\
+    \hline
+    18               & November 15   &TBA\\
+    \hline
+    19               & November 17   &TBA\\
+    \hline
+    20               & November 20   &TBA\\
+    \hline
+    21               & November 22   &TBA \\
+    \hline
+    22               & November 24   &TBA\\
+    \hline
+    23               & November 27   &TBA\\
+    \hline
+    24               & December 1   &TBA\\
+    \hline
+    25               & December 4   &  TBA\\   
+    \hline
+    
+    \end{tabular}
+    \end{table}
+    
+    
+    
+
+% MichaelP
+\section{Team Communication Plan}
+    \label{sec:CommunicationPlan}
+
+    Team communication is a crucial part of ensuring the group stays up to date on issues and info regarding the project. Communication for this project will take place over the issues section provided by GitLab, as well as through a group chat on Facebook. These platforms will be used to discuss issues requiring a resolution in addition to notifications of key deadlines and task needed for completion.
+
+% MikeJ
+\section{Team Member Roles}
+    \label{sec:Roles}
+
+    Michael Panunto - Software development, Documentation \\
+    Bishoy Sefin - Software development, Testing \\
+    Michael Jenkins - Project Manager, Testing
+
+% MichaelP
+\section{Git Workflow Plan}
+    \label{sec:gitWorkflow}
+
+    For this project the git workflow will consist of a master branch that will never be pushed to, instead all the work will be done on separate branches that will be merged. The branches will include: 
+    \begin{itemize}
+        \item develop - For development of main aspects relating to the project
+        \item feature - For smaller features required
+        \item hotfix - For any hotfixes required for the released project.
+    \end{itemize}
+
+% Bishoy
+\section{Proof of Concept Demonstration Plan}
+    \label{sec:ProofOfConcept}
+    The Reminders project is a project that is very useful in our everyday life. The usefulness of the project allows the team members to relate to the situations when they would need such an application which gives the members a deeper understanding of the project and it's goals. The implementation of this project will not be difficult; however, there are some learning curves that the members will have to go through. All members will have to be familiar with the "Google Applications" scripting language to be able to understand the design of the existing software. This section will be a little difficult but with enough effort and determination it is possible to do within the time constraints. Moreover, not all team members are familiar with the android development; however, the development environment is very user friendly and has a simple User Interface which will ease the development process. Finally, the testing for this project should be fairly straight forward. The application will be tested by different users under different circumstances such as time change to see how the application will perform under "edge" test cases.\\ \\
+    
+    This project does not require any specific libraries to be used. The javaMail API will have to be utilized to send users e-mails and for the application to perform as expected. This application will be usable on all android devices. 
+    
+
+% MichaelP
+\section{Technology}
+    \label{sec:Technology}
+
+    The project is an android based application being converted from the original which was written in Google app script. Technology to be used includes the Android Studio IDE, which is the standard for developing android applications. The languages used will be Java for the back-end of the app, with XML being required for the front-end.
+
+% MichaelP
+\section{Coding Style}
+    \label{sec:CodingStyle}
+
+    The coding style for java will adhere to the google java style guide. Found at google.github.io/styleguide/javaguide.html. \\
+
+    The main points include: UTF-8 encoding, K \& R style for braces, lowerCamelCase method names, CONSTANT\_CASE constant names and lowerCamelCase variables.
+
+% MikeJ
+\section{Project Schedule}
+    \label{sec:ProjectSchedule}
+
+    The project schedule can be found under Reminders/ProjectSchedule. It includes a Gantt chart and pdf document.
+
+\section{Project Review}
+    \label{sec:projReview}
+\end{document}
+

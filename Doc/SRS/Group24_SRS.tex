@@ -1,0 +1,91 @@
+\documentclass[12pt, titlepage, a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper, top=3cm, bottom=2cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{SE 3XA3: Software Requirements Specification}
+\author{
+    Reminders - Group 24 - L02\\
+    Michael Panunto - panuntom, \\
+    Michael Jenkins - jenkinma, \\
+    Bishoy Sefin - sefinb
+}
+\date{\today}
+
+\begin{document}
+% Options to be used for table
+\setlength{\arrayrulewidth}{1.5pt}
+\definecolor{light-gray}{gray}{0.90}
+
+\maketitle
+
+\pagenumbering{roman}
+
+% Revision history table
+\begin{table}[H]
+    \begin{center}
+        \rowcolors{1}{white}{light-gray}
+        \caption{Revision History} \label{tab:RevisionHistory}
+        \begin{tabular}{l p{0.4\linewidth} p{0.4\linewidth}}
+            \hline
+            \textbf{Date} & \textbf{Developer(s)} & \textbf{Change} \\
+            \hline
+            2017-10-06 & Michael Panunto, \newline Michael Jenkins, \newline Bishoy Sefin & Created SRS - rev. 0 \\
+            \hline 
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+% General info about the project
+\section{Project Drivers}
+
+\subsection{Purpose of the Project}
+This project is designed to allow users to remember the smaller important moments that occur in day to day life, while additionally notifying these users on important events coming up.
+
+% We need to work on stakeholders
+\subsection{Stakeholders}
+The primary stakeholder for Reminders are students and members of the work force. Their interest in the project stems from a busy lifestyle where balancing personal lives and work/school is becoming increasingly more difficult.
+
+% Functional Reqs - Should be numbered
+\section{Functional Requirements}
+\begin{enumerate}
+    \item The application shall run on the Android operating system.
+    \item The application shall use e-mail permissions to send e-mail reminders to the client.
+    \item A GUI shall be displayed upon application launch with options  to create/edit a reminder or view response history.
+    \item The user shall be able to set a one time, or scheduled reminder.
+    \item The application will store responses to the reminder e-mails.
+    \item The application shall send e-mails through the user's specified application.
+    \item The application will detect if no suitable e-mail application services are available, and display a related message.
+    \item The application shall have a password feature available to the user.
+\end{enumerate}
+
+% Non-functional Reqs
+\section{Non-functional Requirements}
+\begin{itemize}
+    \item Accessibility: The application shall have a minimal interface, easily accessible to users of little Android experience.
+    \item Performance: 
+    \begin{itemize}
+        \item The application will create reminders quickly so as to not interfere with the user's other tasks. 
+        \item Memory usage from the app must not affect performance of other applications
+    \end{itemize}
+    \item Security: The application must offer safe-keeping of reminder responses.
+    \item Operational Constraints: The application must work on Android (It will not work on other operating systems). The Android version must be at least KitKat 4.4.
+    \item Physical Constraints: The application must not use more memory than available on low-end Android devices.
+\end{itemize}
+
+\section{Project Issues}
+
+\subsection{Off-the-Shelf Solutions}
+Countless apps to notify users currently exist on the marketplace, and even come standard on most devices. However, Reminders separates from the rest by sending notifications through e-mail, and storing responses to the e-mails so that moments each day, week, month etc... Can be recorded and looked back on at any point in the future.
+
+\subsection{Problems in Current Environment}
+The main problem existing within current implementation of the project is the accessibility. Users currently have to access it from a browser, where the application isn't optimized for phones making it difficult to set reminders on the go. Converting the application to android offers a solution to this problem, as it makes it easier to use when not near a computer.
+
+\end{document}
